@@ -1,0 +1,234 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url("images/bg.jpg") repeat-x top left;
+	background-color: #D0DFFF;
+	
+	margin: 0px;
+}
+
+#wrapper {
+	position: relative;
+	min-height: 100%;
+}
+
+#header, #content {
+	min-width: 512px;
+	max-width: 1028px;
+	
+	/* align in center */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content {
+	/* space for the footer */
+	padding-bottom: 60px;
+}
+
+#footer {
+	background: #40A0FF;
+	
+	position: absolute;
+	bottom: 0px;
+	
+	width: 100%;
+	height: 36px;
+	padding: 10px 0px;
+	
+	font-size: 14px;
+	text-align: center;
+}
+
+/* for every default link */
+
+a {
+	color: #0000FF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #4040FF;
+}
+
+/* navigation */
+
+#navigation {
+	height: 50px;
+	margin-left: 20px;
+	
+	max-width: 600px;
+}
+
+.nav_element {
+	float: left;
+	
+	/*text-align: center;*/
+	
+	/* color and shape */
+	background: #EDDD90;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	
+	box-shadow: 0px 0px 4px 4px #CDAD70 inset;
+	
+	/* size */
+	/*width: 120px;*/
+	margin: 10px 10px 0px 10px;
+	padding: 0px 20px;
+	
+	height: 40px;
+	line-height: 40px;
+	
+	display: block;
+}
+
+.nav_element:hover {
+	background: #DACA8D;
+	
+	cursor: pointer;
+}
+
+.nav_element.active {
+	margin-top: 0px;
+	height: 50px;
+}
+
+#navigation a {
+	color: black;
+	display: block;
+}
+
+/* main */
+
+#main {
+	/* color and shape */
+	background: rgba(235, 220, 145, 0.75);
+	/*background: #DDD6A8;*/
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px 0px black inset;
+	
+	/* size */
+	/*min-height: 500px;*/
+	padding: 20px;
+	
+	font-size: 18px;
+}
+
+/* spoiler toggle stuff */
+
+.spoiler_outside {
+	/* style */
+	/*background: rgba(224, 224, 224, 0.75);*/
+	background: #F0F0F0;
+	border-radius: 10px;
+	box-shadow: 0px 0px 4px 0px black inset;
+	
+	/* size */
+	margin: 10px 0px;
+	padding: 15px 20px;
+}
+
+.spoiler_element {
+	/* style */
+	background: #F0F0F0;
+	box-shadow: 0px 0px 4px 1px #404040 inset;
+	
+	/* size */
+	/*width: 70px;*/
+	font-size: 16px;
+	
+	display: table-cell;
+	
+	padding: 4px 6px 4px 6px;
+}
+
+.spoiler_element:hover {
+	background: #E0E0E0;
+}
+
+.spoiler_element:active {
+	background: #D0D0D0;
+}
+
+.spoiler_label {
+	display: block;
+}
+
+.spoiler_toggle {
+	opacity: 0.0;
+	/*display: none;*/ /* doesn't work correctly in opera (spoiler will open, but won't close anymore) */
+}
+
+.spoiler {
+	display: none;
+	
+	/* style */
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 4px 0px black inset;
+	
+	/* size */
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.spoiler_toggle:checked + .spoiler {
+	display: block;
+}
+
+/* index.html */
+ul#features li:nth-child(2n) {
+	background: rgba(0, 0, 0, 0.075);
+}
+
+/* downloads.html */
+table#downloads tr td {
+	width: 150px;
+	height: 30px;
+	text-align: center;
+}
+
+/*table#downloads tr {
+	background: rgba(190, 190, 190, 0.75);
+}
+
+table#downloads tr:nth-child(2n) {
+	background: rgba(200, 200, 200, 0.75);
+}*/
+
+/* images.html */
+#images {
+	text-align: center;
+}
+
+/*img.screenshot {
+	transition-property: width;
+	transition-duration: 1s;
+	transition-delay: 0s;
+	
+	width: 49%;
+	
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#screens a:nth-child(2n + 1) img {
+	float: left;
+}
+
+img.screenshot_front {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -360px 0px 0px -640px;
+	
+	visibility: visible;
+}
+
+img.screenshot:hover + img.screenshot_front {
+	visibility: visible;
+}*/

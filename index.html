@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Krisko" />
+		<meta name="keywords" content="teeworlds, k-client, kclient" />
+		
+		<title>Teeworlds K-Client</title>
+		
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+		<link rel="stylesheet" href="stylesheet.css" type="text/css" />
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<a href="index.html"><img src="images/logo.png" alt="K-Client logo" /></a>
+			</div>
+			
+			<div id="content">
+				<!-- Navigation -->
+				<div id="navigation">
+					<!-- Home div -->
+					<div class="nav_element active" onClick="window.location='index.html';">
+						<a href="index.html">Home</a>
+					</div>
+					
+					<!-- Downloads div -->
+					<div class="nav_element" onClick="window.location='downloads.html';">
+						<a href="downloads.html">Downloads</a>
+					</div>
+					
+					<!-- Images div -->
+					<div class="nav_element" onClick="window.location='images.html';">
+						<a href="images.html">Images</a>
+					</div>
+					
+					<!-- Contact div -->
+					<div class="nav_element" onClick="window.location='contact.html';">
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+				
+				<div id="main">
+					<p>
+						The K-Client is a Client modification of the game <a href="http://www.teeworlds.com" target="_blank">Teeworlds</a>.<br/>
+						Modification by Krisko and Ice*CreamXx
+					</p>
+					
+					<h4>Features:</h3>
+					<ul id="features">
+						<li>64 player support</li>
+						<li>Connect multiple tees to different servers</li>
+						<li>Clickable links</li>
+						<li>Chat-colors in f1</li>
+						<li>Ingame serverbrowser</li>
+						<li>(ingame) Changeable fonts/gameskins/menu background/entities</li>
+						<li>A chat</li>
+						<li>Some bots <span style="font-size: 0.7em;">(there is also a version without bots if you prefer that)</span></li>
+						<li>Games (2048 / Snake)</li>
+						<li>A bind menu for the extra stuff</li>
+						<li>Companions that are just flying at your side and don't really do anything (well, Navi makes noises!)</li>
+						<li>Some translations</li>
+						<li>Ultra professional update notifications <span style="font-size: 0.5em;">(but it just links to this site, so you have to download it by yourself again)</span></li>
+						<li>A not-so-serious developer</li>
+						<li>A lot of unnecessary stuff</li>
+						<li>... and much more</li>
+					</ul>
+					
+					<h4>Changelog 1.7:</h4>
+					<ul class="changelog">
+						<li>Use variables in the 'say' command and in the remote console. Type 'rcon_say_help' in the console for more info about it</li>
+						<li>Command 'netclient_connect' is now able to connect netclients to a specified host/ip</li>
+						<li>Use 'bind x' to see what you bound on key x</li>
+						<li>Fixed bug where some maps didn't download</li>
+						<li>You can play on fng2+ without being falsely recognized as a bot - with the botless version</li>
+					</ul>
+					
+					<h4>Changelog 1.6.2:</h4>
+					<ul class="changelog">
+						<li>Added option to display player id's above their names (like in debug mode)</li>
+						<li>Fixed emoticons selected from menu not working</li>
+					</ul>
+					
+					<h4>Changelog 1.6.1:</h4>
+					<ul class="changelog">
+						<li>Fixed mouse sensitivity scrollbar</li>
+						<li>Fixed not being able to copy unlimited lines from console</li>
+					</ul>
+					
+					<h4>Changelog 1.6:</h4>
+					<ul class="changelog">
+						<li>Added safety stuff from Teeworlds version 0.6.4</li>
+						<li>Added option to change the particle and emoticon skins (put them in your teeworlds folder /data/particles/ or /data/emoticons/)</li>
+						<li>Fixed demo camera lagging</li>
+						<li>Fixed line-copy not working in chat console</li>
+						<li>Fixed "new message"-Notification not hiding when closing an unread tab in the chat console</li>
+					</ul>
+					
+					<h4>Changelog 1.5.1:</h4>
+					<ul class="changelog">
+						<li>Added Security Token for spoof protection (from ddnet)</li>
+					</ul>
+					
+					<h4>Changelog 1.5:</h4>
+					<ul class="changelog">
+						<li>Hook will stay outside when opening the menu or chat</li>
+						<li>Added line-selection in the console (copies to clipboard on mousebutton release - only on windows version)</li>
+						<li>Fixed some special characters not being copied/pasted correctly</li>
+						<li>Fixed votes not being removed when joining while a vote is active</li>
+					</ul>
+					
+					<h4>Changelog 1.4.2:</h4>
+					<ul class="changelog">
+						<li>Fixed rcon not showing additional commands after adding another netclient</li>
+						<li>Fixed damage indicators (stars) sometimes not deleting when adding a netclient</li>
+						<li>Fixed info from buttons in the console rendering underneath the console</li>
+					</ul>
+					
+					<h4>Changelog 1.4.1:</h4>
+					<ul class="changelog">
+						<li>You can now disable notifications for versions with "just bugfixes"</li>
+						<li>Fixed message notifications from nymia being stuck after you read the messages</li>
+					</ul>
+					
+					<h4>Changelog 1.4:</h4>
+					<ul class="changelog">
+						<li>Added option to spectate people while playing (of course only if they get snapped)</li>
+						<li>Added option to change the background color of x-ray</li>
+						<li>Added bind for +k_hooklines (hold key instead of toggle)</li>
+						<li>Added Dummy options</li>
+						<li>Removed disconnect message (doesn't work anymore. lol)</li>
+						<li>Changed some options (Nymia, Companions, Controls). Combined Player and Tee tabs</li>
+						<li>Serverinfo now always shows the correct server address</li>
+						<li>Fixed rainbow not working correctly</li>
+					</ul>
+					
+					<h4>Changelog 1.3:</h4>
+					<ul class="changelog">
+						<li>Added companions (Thanks to VelonoX for images)</li>
+						<li>Added hooklines (Extras -> Help)</li>
+						<li>Added option to change chat colors (Customize -> Chat color)</li>
+						<li>Added polish language (Thanks to mkjol)</li>
+						<li>Players in Nymia are now sorted alphabetically</li>
+						<li>Fixed crashbug that sometimes happened when you activated ping in hud and there were too many projectiles/explosions</li>
+						<li>Fixed crashbug that occured when you added a netclient on a ddnet server (because ddnet sends you 2 different maps now)</li>
+						<li>Fixed password popup not showing up when connecting a second netclient to another server with password</li>
+						<li>Fixed bug where you didn't see commands in f2 with a new netclient</li>
+						<li>Fixed bug where deactivating super dynamic cam caused the normal dynamic cam (if activated before) to also deactivate</li>
+						<li>Maybe fixed nymia follow crashbug ._.</li>
+					</ul>
+					
+					<h4>Changelog 1.2.1:</h4>
+					<ul class="changelog">
+						<li>Added version without bots</li>
+						<li>Added cinematic camera mode thingy... just for fun (Extras -> Camera)</li>
+						<li>Added rainbow (Customize -> Tee Skin)</li>
+						<li>Added a new game (Pong)</li>
+						<li>Optimized Snake a bit</li>
+						<li>You can now change the netclient while downloading a map</li>
+						<li>Fixed a crashbug</li>
+						<li>Fixed a bug where you didn't see rcon commands with netclients > 0</li>
+						<li>Fixed some smaller bugs</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
